@@ -87,5 +87,10 @@ namespace EMI.Departments.Users.UnitTest
             var result = departmentController.UpdateDepartment(DepartmentDetailsControllerObjectMock.updateDepartmentNull());
             Assert.IsType<BadRequestResult>(result);
         }
+
+        public void Nothng()
+        {
+            Console.WriteLine("");
+        }
     }
 }
