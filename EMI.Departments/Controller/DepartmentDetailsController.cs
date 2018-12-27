@@ -29,7 +29,9 @@ namespace EMI.Departments.Users.Controller
         {
             var departmentDetails = _departmentService.GetDepartments();
             if (departmentDetails.Result == null)
+            {
                 return NotFound();
+            }
             else
             {
 
