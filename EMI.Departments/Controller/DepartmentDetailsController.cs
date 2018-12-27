@@ -31,8 +31,10 @@ namespace EMI.Departments.Users.Controller
             if (departmentDetails.Result == null)
                 return NotFound();
             else
+            {
 
                 return Ok(await departmentDetails);
+            }
         }
         [HttpPost]
         public async Task<IActionResult> addDepartment(DepartmentDetails departmentDetails)
