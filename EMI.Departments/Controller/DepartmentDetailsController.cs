@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using EMI.Departments.Domain.Models;
-using EMI.Departments.Domain.Repositories;
-using EMI.Departments.Domain.Interfaces;
+﻿using EMI.Departments.Domain.Models;
 using EMI.Departments.Domain.Services;
+using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace EMI.Departments.Users.Controller
 {
@@ -64,7 +57,7 @@ namespace EMI.Departments.Users.Controller
                 return Ok();
             }
         }
-
+        [HttpPut]
         public IActionResult UpdateDepartment(DepartmentDetails departmentDetails)
         {
             if(departmentDetails != null)
